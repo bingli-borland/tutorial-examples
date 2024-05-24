@@ -9,4 +9,7 @@
   <groupId>org.glassfish.javaeetutorial</groupId>
   <artifactId>cart-common</artifactId>
   <name>cart-common</name>
+  <build>
+    <finalName>cart-common</finalName>
+  </build>
 </project>

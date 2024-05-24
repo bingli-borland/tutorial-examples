@@ -16,5 +16,7 @@
         <module>cart-ejb</module>
         <module>cart-appclient</module>
         <module>cart-ear</module>
+        <module>cart-war1</module>
+        <module>cart-war2</module>
     </modules>
 </project>

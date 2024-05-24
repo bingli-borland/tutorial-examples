@@ -1,0 +1,1 @@
++${com.bes.installRoot}/test/*.jar
