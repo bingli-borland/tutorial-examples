@@ -28,4 +28,6 @@ public interface Cart {
     public List<String> getContents();
 
     public void remove();
+
+    String getConstant();
 }

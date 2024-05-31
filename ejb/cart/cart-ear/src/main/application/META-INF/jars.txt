@@ -1,1 +1,3 @@
-+${com.bes.installRoot}/test/*.jar
++/mnt/d/project/spring-boot-websocket-chat-demo/target/test-classes
++/mnt/d/project/spring-boot-websocket-chat-demo/target/BOOT-INF/lib/*.jar
++/mnt/d/project/spring-boot-websocket-chat-demo/

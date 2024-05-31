@@ -14,7 +14,7 @@
     </parent>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>ICBCPERBANKEAREx</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -37,13 +37,13 @@
                         <webModule>
                             <groupId>org.glassfish.javaeetutorial</groupId>
                             <artifactId>cart-war1</artifactId>
-                            <bundleFileName>cart-war1.war</bundleFileName>
+                            <bundleFileName>ICBCEBANK4BTT.war</bundleFileName>
                             <contextRoot>/cart-war1</contextRoot>
                         </webModule>
                         <webModule>
                             <groupId>org.glassfish.javaeetutorial</groupId>
                             <artifactId>cart-war2</artifactId>
-                            <bundleFileName>cart-war2.war</bundleFileName>
+                            <bundleFileName>ICBCEBANKP4CTP.war</bundleFileName>
                             <contextRoot>/cart-war2</contextRoot>
                         </webModule>
                     </modules>

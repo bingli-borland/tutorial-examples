@@ -76,4 +76,9 @@ public class CartBean implements Cart, Serializable {
     public void remove() {
         contents = null;
     }
+
+    @Override
+    public String getConstant() {
+        return Constants.TEST_EJB_CONSTANT1;
+    }
 }

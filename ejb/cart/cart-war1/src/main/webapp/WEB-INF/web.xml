@@ -4,4 +4,20 @@
 
 <web-app>
   <display-name>cart-war1</display-name>
+  <servlet>
+    <servlet-name>TestCartServlet1</servlet-name>
+    <servlet-class>javaeetutorial.cart.war1.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestCartServlet1</servlet-name>
+    <url-pattern>/TestCartServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TestEJBServlet1</servlet-name>
+    <servlet-class>javaeetutorial.cart.war1.TestEJBServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestEJBServlet1</servlet-name>
+    <url-pattern>/TestEJBServlet1</url-pattern>
+  </servlet-mapping>
 </web-app>

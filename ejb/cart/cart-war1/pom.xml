@@ -17,6 +17,12 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.glassfish.javaeetutorial</groupId>
+            <artifactId>cart-common</artifactId>
+            <version>8.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <build>
         <finalName>car-war1</finalName>
