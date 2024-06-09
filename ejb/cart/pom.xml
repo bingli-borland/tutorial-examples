@@ -18,5 +18,7 @@
         <module>cart-ear</module>
         <module>cart-war1</module>
         <module>cart-war2</module>
+	    <module>cart-ws</module>
+<!--        <module>spring-petclinic</module>-->
     </modules>
 </project>
