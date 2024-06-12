@@ -9,5 +9,7 @@
          javaeetutorial.cart.ejb.Constants.TEST_EJB_CONSTANT1<input type="text" name="TEST_EJB_CONSTANT1" value="<%= javaeetutorial.cart.ejb.Constants.TEST_EJB_CONSTANT1 %>"/><br>
          <input type="submit" value="修改"/>
    </form>
+
+<h2>cart-war1 TestHeader: <%= response.getHeader("TestHeader") %></h2>
 </body>
 </html>

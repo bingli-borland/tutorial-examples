@@ -17,6 +17,6 @@ public class SpringBootWebsocketExampleApplication extends SpringBootServletInit
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return super.configure(builder);
+		return builder.sources(SpringBootWebsocketExampleApplication.class);
 	}
 }
