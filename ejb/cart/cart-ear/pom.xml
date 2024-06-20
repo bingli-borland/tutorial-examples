@@ -42,12 +42,6 @@
                                 </appClientModule>
                                 <webModule>
                                     <groupId>org.glassfish.javaeetutorial</groupId>
-                                    <artifactId>cart-ws</artifactId>
-                                    <bundleFileName>cart-ws.war</bundleFileName>
-                                    <contextRoot>/</contextRoot>
-                                </webModule>
-                                <webModule>
-                                    <groupId>org.glassfish.javaeetutorial</groupId>
                                     <artifactId>cart-war1</artifactId>
                                     <bundleFileName>ICBCEBANK4BTT.war</bundleFileName>
                                     <contextRoot>/cart-war1</contextRoot>
@@ -57,6 +51,12 @@
                                     <artifactId>cart-war2</artifactId>
                                     <bundleFileName>ICBCEBANKP4CTP.war</bundleFileName>
                                     <contextRoot>/cart-war2</contextRoot>
+                                </webModule>
+                                <webModule>
+                                    <groupId>org.glassfish.javaeetutorial</groupId>
+                                    <artifactId>cart-ws</artifactId>
+                                    <bundleFileName>cart-ws.war</bundleFileName>
+                                    <contextRoot>/</contextRoot>
                                 </webModule>
                             </modules>
                         </configuration>
