@@ -23,7 +23,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.superbiz</groupId>
   <artifactId>webservice-ws-security</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>8.0.16</version>
   <name>TomEE :: Web Examples :: EJB WebService with WS-Security</name>
   <properties>
@@ -68,6 +68,12 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.apache.tomee</groupId>
+      <artifactId>cxf-shade</artifactId>
+      <version>8.0.16</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <build>
     <defaultGoal>install</defaultGoal>
@@ -125,9 +131,9 @@
               <goal>run</goal>
             </goals>
             <configuration>
-              <target name="generate keys">
-                <ant antfile="create-keystores.xml" target="run" />
-              </target>
+<!--              <target name="generate keys">-->
+<!--                <ant antfile="create-keystores.xml" target="run" />-->
+<!--              </target>-->
             </configuration>
           </execution>
         </executions>

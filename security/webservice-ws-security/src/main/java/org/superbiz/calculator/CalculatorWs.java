@@ -18,6 +18,8 @@ package org.superbiz.calculator;
 
 import javax.activation.DataHandler;
 import javax.jws.WebService;
+import javax.xml.ws.soap.MTOM;
+import org.apache.cxf.annotations.GZIP;
 
 //END SNIPPET: code
 
@@ -28,6 +30,8 @@ import javax.jws.WebService;
  */
 //START SNIPPET: code
 
+@GZIP
+@MTOM
 @WebService(targetNamespace = "http://superbiz.org/wsdl")
 public interface CalculatorWs {
 
@@ -35,5 +39,6 @@ public interface CalculatorWs {
 
     public int multiply(int mul1, int mul2);
 
+    DataHandler uploadFile(DataHandler file);
 }
 //END SNIPPET: code

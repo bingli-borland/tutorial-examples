@@ -16,6 +16,7 @@
  */
 package org.superbiz.calculator;
 
+import javax.activation.DataHandler;
 import javax.annotation.security.DeclareRoles;
 import javax.annotation.security.RolesAllowed;
 import javax.ejb.Stateless;
@@ -46,5 +47,11 @@ public class CalculatorImpl implements CalculatorWs, CalculatorRemote {
         return mul1 * mul2;
     }
 
+    @Override
+    public DataHandler uploadFile(DataHandler file) {
+        // 处理文件
+        System.out.println("File received: " + file.getDataSource());
+        return file;
+    }
 }
 //END SNIPPET: code

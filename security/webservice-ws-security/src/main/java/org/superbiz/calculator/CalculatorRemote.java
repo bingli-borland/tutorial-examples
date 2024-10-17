@@ -16,6 +16,7 @@
  */
 package org.superbiz.calculator;
 
+import javax.activation.DataHandler;
 import javax.ejb.Remote;
 
 @Remote
@@ -25,4 +26,5 @@ public interface CalculatorRemote {
 
     public int multiply(int mul1, int mul2);
 
+    DataHandler uploadFile(DataHandler file);
 }

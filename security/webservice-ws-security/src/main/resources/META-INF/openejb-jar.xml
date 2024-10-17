@@ -32,6 +32,8 @@
       wss4j.out.encryptionPropFile=META-INF/CalculatorImplUsernameTokenPlainPasswordEncrypt-server.properties
       wss4j.out.encryptionUser=clientalias
 
+      mtom-enabled=true
+
     </properties>
   </ejb-deployment>
 
