@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"> <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>jacc</artifactId>
+        <groupId>org.glassfish.javaeetutorial</groupId>
+        <version>8.1-SNAPSHOT</version>
+    </parent>
+    <groupId>org.glassfish.javaeetutorial</groupId>
+    <artifactId>jacctest</artifactId>
+    <packaging>ear</packaging>
+    <name>jacctest</name>
+    <build>
+    <finalName>jacctest</finalName>
+    <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>${maven.ear.plugin.version}</version>
+        <configuration>
+            <version>6</version>
+            <defaultLibBundleDir>lib</defaultLibBundleDir>
+            <modules>
+                <ejbModule>
+                    <groupId>org.glassfish.javaeetutorial</groupId>
+                    <artifactId>jaccejb</artifactId>
+                    <bundleFileName>jaccejb.jar</bundleFileName>
+                </ejbModule>
+                <webModule>
+                    <groupId>org.glassfish.javaeetutorial</groupId>
+                    <artifactId>jaccweb</artifactId>
+                    <bundleFileName>jaccweb.war</bundleFileName>
+                    <contextRoot>/jaccweb</contextRoot>
+                </webModule>
+            </modules>
+        </configuration>
+    </plugin>
+    </plugins>
+    </build>
+    <dependencies>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>jaccejb</artifactId>
+        <version>${project.version}</version>
+        <type>ejb</type>
+    </dependency>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>jaccweb</artifactId>
+        <version>${project.version}</version>
+        <type>war</type>
+    </dependency>
+    </dependencies>
+</project>

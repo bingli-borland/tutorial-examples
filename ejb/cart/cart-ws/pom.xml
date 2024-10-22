@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<bes.version>9.5.2.012</bes.version>
+		<bes.version>9.5.5.008</bes.version>
 	</properties>
 
 	<dependencies>
@@ -34,8 +34,28 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-
+		<dependency>
+			<groupId>com.bes.appserver</groupId>
+			<artifactId>bes-websocket-ex</artifactId>
+			<version>9.5.2.017</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bes.appserver</groupId>
+			<artifactId>bes-lite-spring-boot-starter</artifactId>
+			<version>${bes.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bes.appserver</groupId>
+			<artifactId>bes-websocket</artifactId>
+			<version>${bes.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>

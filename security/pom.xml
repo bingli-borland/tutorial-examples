@@ -19,6 +19,7 @@
         <module>hello1-formauth</module>
         <module>hello2-basicauth</module>
         <module>security-api</module>
+        <module>webservice-ws-security</module>
     </modules>
     
     <build>

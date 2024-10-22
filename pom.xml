@@ -112,6 +112,7 @@
         <module>concurrency</module>
         <module>connectors</module>
         <module>ejb</module>
+        <module>jacc</module>
         <module>jaxrs</module>
         <module>jaxws</module>
         <module>jms</module>
